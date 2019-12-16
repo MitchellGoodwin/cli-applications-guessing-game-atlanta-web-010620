@@ -3,8 +3,8 @@ require 'pry'
 
 def run_guessing_game
   answer = rand(6) + 1
-  input = gets.chomp.to_i
-  if input == answer
+  input = gets.chomp
+  if input.to_i == answer
     puts "You guessed the correct number!"
   elsif input == "exit"
     puts "Goodbye!"
